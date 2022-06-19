@@ -1,7 +1,6 @@
-from re import S
-from src.ai.spelling_checker import SpellingChecker
+from src.story_retriever.retriever import StoryRetriever
 
 
-spelling_checker = SpellingChecker()
-rs = spelling_checker.check_spell('ca phe')
-print(rs)
+STORY_LINK = "https://truyenfull.vn/thien-dao-do-thu-quan-070820/"
+story_retriever = StoryRetriever(STORY_LINK)
+story_retriever.run()
